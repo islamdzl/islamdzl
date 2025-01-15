@@ -1,0 +1,415 @@
+.title-notifications {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    border-bottom: 1px green solid;
+}
+.notifications {
+    width: 98%;
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 5px 10px 0 10px;
+    text-align: center;
+    justify-content: center;
+}
+.notification {
+    width: 85%;
+    height: auto;
+    color: aliceblue;
+    border-bottom: 1px aliceblue solid;
+    padding: 0 0 10px 0;
+    margin: auto;
+}
+.notification span {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 85%;
+}
+.notification-title {
+    color: red;
+}
+/*           CREAT POST  STYLES          */
+.title-post {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 70%;
+    height: auto;
+    margin: auto 0 10px 30px;
+    height: 20px;
+}
+.post-form {
+    width: 80%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin: 10% auto auto auto;
+    
+}
+#in-title-post {
+    text-align: center;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    border: 1px aliceblue solid;
+    color: aliceblue;
+}
+.button-postage {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: aliceblue;
+    border-radius: 7px;
+    border: 1px aliceblue solid;
+    margin-top: 20px;
+    width: 30%;
+    height: 35px;
+    font-size: 20px;
+    margin: auto;
+}
+.button-postage:hover {
+    cursor: pointer;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 1px aliceblue solid;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 16px;
+    top: 10px;
+}
+.publication-info {
+    position: absolute;
+    height:350px;
+    width: 75px;
+    bottom: 0vh;
+    border-radius: 10px;
+    color: aliceblue;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.23) ;
+}
+.publication-info img {
+    width: 35px; 
+}
+.publication-info-avatar {
+    width: 65px;
+    height: 65px; 
+    border-radius: 50%;
+    border: 1px aliceblue solid;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.publication-info-avatar img {
+    width: 65px
+}
+.publication-info h4 {
+    margin-bottom: 10px;
+}
+.upload-image-image-form {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.upload-image-image-form div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+input[type="file"] {
+display: none;
+}
+
+.chats-form {
+    width: 100%;
+    height: 100vh;
+}
+.chats-form-storys {
+    margin-top: 7px;
+    position: absolute;
+    width: 100%;
+    height: 105px;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.1));
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex; /* تفعيل Flexbox */
+    flex-wrap: nowrap; /* منع التفاف العناصر في سطر جديد */
+    /* scrollbar-width: none; */
+    padding: 5px 10px 0 10px;
+}
+
+.chats-form-story {
+    height: 90px;
+    width: 90px;
+    border: 2px red solid;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+.chats-form-chats-table {
+    margin-top: 125px;
+    width: 100%;
+    height: 73%;
+    border-top: 1px aliceblue solid;
+    background-color: rgba(0,0,0,0.3);
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+.chats-form-chat {
+    margin-top: 5px;
+    width: 100%;
+    height: 77px;
+    background-color: rgba(0, 0, 0, 0.0);
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 6px;
+    border-bottom: 0.1px aliceblue solid;
+}
+.chats-form-chat-info {
+    width: 45%;
+    color: aliceblue;
+    padding: 15px 0 0 15px;
+}
+.chats-form-chat-info h4 {
+    color: rgba(240, 248, 255, 0.534);
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.chats-form-chat-box-image {
+    width: 72px; 
+    height: 70px; 
+    border-radius: 50%; 
+    padding-top: 3px;
+    margin-left: 15px;
+    border: 1px aliceblue solid;
+}
+.chats-form-chat-box-settings {
+    margin-top: 25px;
+    width: 70px;
+    padding-right: 20px;
+    direction: rtl;
+    right: 0;
+}
+
+.chats-form-message {
+    display: flex;
+    flex-direction: column; /* يحدد اتجاه العناصر داخل العنصر ليكون عمودياً */
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 70%;
+    border-radius: 15px;
+    padding: 5px;
+    color: aliceblue;
+    word-wrap: break-word; /* يسمح بإنكسار النص داخل العنصر */
+    margin-bottom: 15px;
+}
+.center { /* استبدل .container بفئة الحاوية الأم التي تحتوي على العنصر */
+    display: flex;
+    justify-content: center; /* توسيط العناصر أفقياً */
+    align-items: center; /* توسيط العناصر عمودياً */
+}
+.right { /* استبدل .container بفئة الحاوية الأم التي تحتوي على العنصر */
+    display: flex;
+    justify-content: right; /* توسيط العناصر أفقياً */
+    align-items: center; /* توسيط العناصر عمودياً */
+    margin-right: 15px;
+    color: aliceblue;
+}
+.left { /* استبدل .container بفئة الحاوية الأم التي تحتوي على العنصر */
+    display: flex;
+    justify-content: left; /* توسيط العناصر أفقياً */
+    align-items: center; /* توسيط العناصر عمودياً */
+    margin-left: 15px;
+}
+.scroll {
+    height: 77vh;
+    overflow-y: scroll;
+}
+.send-message {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    bottom: 55px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.send-message-lable {
+    height: 70%;
+    width: 80%;
+    display: grid;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: 1px aliceblue solid;
+    color: aliceblue;
+    font-size: 20px;
+    margin: auto auto auto 20px;
+}
+.send-message-button {
+    height: 80%;
+    width: 10%;
+    display: grid;
+    text-align: center;
+    margin: auto auto auto 0;
+}
+
+.create-publication-info {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    display: flex;
+    flex-direction: column; /* يحدد اتجاه العناصر داخل العنصر ليكون عمودياً */
+    border-radius: 15px;
+    color: rgba(240, 248, 255, 0.715);
+    word-wrap: break-word; /* يسمح بإنكسار النص داخل العنصر */
+    margin-bottom: 15px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.23) ;
+}
+.create-publication-info img {
+    margin: auto;
+}
+.create_publication-title {
+    font-size: 16px;color: aliceblue;
+    background-color: transparent;
+    padding-right: 10px;
+    text-align: end;
+    outline: none;
+    border: none;
+}
+.create_publication-discription {
+    position: absolute;
+    max-width: 75%;
+    padding-right: 10px;
+    color: rgba(240, 248, 255, 0.708);
+    flex-direction: column; /* يحدد اتجاه العناصر داخل العنصر ليكون عمودياً */
+    word-wrap: break-word; /* يسمح بإنكسار النص داخل العنصر */
+    text-align: end;
+    outline: none;
+    border: none;
+    bottom: 0px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.23) ;
+}
+.upload-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+.upload-image-image {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 110px;
+}
+.upload-image-controles {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 115px;
+    display: flex;
+    flex-grow: 1;
+    z-index: 1;
+}
+/*========================================================*/
+.watch-publication-discription {
+    position: absolute;
+    font-size: 12px;
+    box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.23) ;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(240, 248, 255, 0.708);
+    padding-right: 10px;
+    text-align: end;
+    bottom: 120px;
+    right: 0;
+    max-width: 75%;
+    flex-direction: column; /* يحدد اتجاه العناصر داخل العنصر ليكون عمودياً */
+    word-wrap: break-word; /* يسمح بإنكسار النص داخل العنصر */
+}
+.watch-publication-info {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column; /* يحدد اتجاه العناصر داخل العنصر ليكون عمودياً */
+    border-radius: 15px;
+    color: rgba(240, 248, 255, 0.715);
+    word-wrap: break-word; /* يسمح بإنكسار النص داخل العنصر */
+    margin-bottom: 15px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.23) ;
+    
+}
+.publication {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.watch-publication-info {
+    position: absolute;
+    height:300px;
+    width: 75px;
+    bottom: 150px;
+    border-radius: 10px;
+    color: aliceblue;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.23) ;
+}
+.watch-publication-info img {
+    width: 35px; 
+    margin: auto;
+}
+.watch-publication-info-avatar {
+    width: 65px;
+    height: 65px; 
+    border-radius: 50%;
+    border: 1px aliceblue solid;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.watch-publication-info-avatar img {
+    width: 65px
+}
+.watch-publication-info h4 {
+    margin-bottom: 10px;
+}
+.watch-publication-output-form {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+}
+/* 
+.publication-info {
+    position: relative;
+    width: 100%;
+    top: 0;
+    bottom: 110px;
+}
+.publication-info div {
+    position: relative;
+    top: 10px;
+    left: 10px;
+} */

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/style/profile.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>user: islam</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    body {
+        background: rgba(0, 0, 0, 0.9);
+        overflow: hidden;
+    }
+    .page {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-color: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 100vh;
+    }
+    .background {
+        background-image: url('/images/ss.jpg');
+        background-size: 100% 100%;
+        min-width: 350px;
+        min-height: 300px;
+        height: 100vh;
+        background-color: rgba(22,22,22);
+        overflow: hidden;
+        margin: 0 auto 0 auto;
+    }
+    .body {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .animate {
+        animation: an 300ms;
+    }
+    .konsole {
+        width: 90%;
+        height: 100px;
+        background-color: rgba(0,0,0,0.5);
+        color: aliceblue;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        word-wrap: break-word;
+        overflow-y: scroll;
+    }
+    @keyframes an {
+        0%  {
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    #_1 {display: none;}
+    #_2 {display: none;}
+    #_3 {display: none;}
+    #_4 {display: none;}
+    #_5 {display: none;}
+    #_6 {display: none;}
+    #_7 {display: none;}
+    #_8 {display: none;}
+    /* ================================ THIS FOR FILE CSS */
+
+</style>
+<script>
+
+</script>
+<body>
+    <div class="background" id="background">
+        <div class="body">
+            <div class="page" id="page">
+                <div class="animate" id="_1">    <!-- PROFILE -->
+                    <div class="image-profile" style="background-image: url(/images/bbg.jpg);">
+                        <div class="image-profile-opacity">
+                            <div style="height: 0;transform: translate(-5px, 25px);width: 100%;direction: rtl;">
+                                <img class="change-background-images" src="/images/edite-background.png" alt="">
+                                <img class="change-background-images" src="/images/edite-avatar.png" alt="">
+                            </div>
+                            <div class="avatar">
+                                <div style="transform: translate( 0 , -80px);">
+                                    <img style="width: 100%;height: 180%;" id="avatar" src="/images/a.jpg" alt="/images/default-user.png">
+                                </div>
+                                <div>
+                                    <img class="edite-avatar-image" src="/images/edite-avatar.png" alt="">
+                                </div>
+                            </div>
+                            <div class="image-profile-info">
+                                <h4 style="display: inline;"><img style="width: 20px;height: 20px;margin: auto;" src="/images/heart.png" alt="">1234</h4>
+                                <h4 style="display: inline;"><img style="width: 20px;height: 20px;margin: auto;" src="/images/group.png" alt="">5sds02</h4>
+                                <h4 style="display: inline;"><img style="width: 20px;height: 20px;margin: auto;" src="/images/frends.png" alt="">442</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="border-color: red;">
+                    <div class="more-info">
+                            sqdqsdqfqs
+                    </div>
+
+                    <div class="tabs">
+                        <img style="width: 25px;height: 25px;margin: auto;" onclick="prender('_1')" src="/images/new-post.png" alt="">
+                        <!-- <img style="width: 25px;height: 25px;margin: auto;" onclick="prender('_2')" src="/images/love-hand-drawn-heart-symbol-outline.png" alt=""> -->
+                        <img style="width: 25px;height: 25px;margin: auto;" onclick="prender('_3')" src="/images/project.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="animate" id="p_1"></div>
+                        <div class="animate" id="p_2"></div>
+                        <div class="animate" id="p_3"></div>
+                    </div>
+                    <script>
+                        const p_1 = document.getElementById('p_1')
+                        const p_2 = document.getElementById('p_2')
+                        const p_3 = document.getElementById('p_3')
+                        const parr_list = [p_1, p_2, p_3]
+                        let pp_old = parr_list[0]
+                        let pboll
+                        const prender = (p)=>{
+                            pboll = true
+                            parr_list.forEach(( document_page )=>{
+                                if ( p == '_2' || p == '_3') {
+                                    pboll ? window.alert('مزال') :null
+                                    pboll = false
+                                    return
+                                }else{
+                                    if (document_page.id == p) {
+                                        document_page.style.display = 'block'
+                                    }else{
+                                        document_page.style.display = 'none'
+                                    }
+                                }
+
+                            })
+                            pp_old = p
+                        }
+                        prender('_1')
+                    </script>
+                </div>
+                <div>
+                
+                    <div  class="animate" id="_6" style="margin-top: 10px;">
+                        <div class="chats-form">
+                            <div class="scroll">
+                                <div class="left">
+                                    <div style="margin: 2px;">
+                                        <img style="width: 25px;height: 25px;margin: auto;" onclick="render('_3')" src="/images/new-post.png" alt="">
+                                    </div>
+                                    <div class="chats-form-message" >
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="chats-form-message" >
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                    </div>
+                                    <div style="margin: 2px;">
+                                        <img style="width: 25px;height: 25px;margin: auto;" onclick="render('_3')" src="/images/new-post.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="chats-form-message" >
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                        dssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsddssdsd
+                                            <img style="width: 25px;height: 25px;margin: auto;" onclick="render('_3')" src="/images/new-post.png" alt="">
+                                    </div>
+        
+                                </div>
+                            </div>
+                            <!-- <div class="send-message">
+                                <input type="text" class="send-message-lable">
+                                <div class="send-message-button">
+                                    <img style="width: 35px;height: 35px;margin: auto;" src="/images/sent.png" alt="">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="chats-form" class="animate" id="_3"> 
+                    <div class="upload-image">
+                        <div class="upload-image-image">
+                            <div class="upload-image-image-form">
+                            <div>
+                                <label class="custom-file-upload" >
+                                    <input type="file" id="create_publication-file">
+                                    Add photp
+                                </label>
+                            </div>
+                                <image                   style="width: 100%;display: none;" id="output-publication-image" alt="">
+                                <video autoplay controls style="width: 100%;display: none;" id="output-publication-video" alt="">
+                            </div>
+                            <div class="create-publication-info">
+                                <div class="right">
+                                    <h3>islam</h3>
+                                </div>
+                                    <input type="text" id="create_publication-title" placeholder="Title For Publication" class="create_publication-title">
+                                    <br>
+                                    <input type="text" id="create_publication-discription" placeholder="Discription For Publication" class="create_publication-discription">
+                            </div>
+                            <div style="height: 0; direction: ltr;">
+                                <div class="publication-info">
+                                    <div class="publication-info-avatar">
+                                        <img src="/logo.png" alt="">
+                                    </div>
+                                    <img src="/images/heart.png" alt="">
+                                    <h4>0</h4>
+                                    <img src="/images/comment.png" alt="">
+                                    <h4>0</h4>
+                                    <img src="/images/unlink.png" alt="">
+                                    <h4>0</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-image-controles">
+                            <input class="button-postage" type="button" value="Upload" onclick="APPS[USER].functions['create_publication']('publication')">
+                            <input class="button-postage" type="button" value="Cansle">
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .for-you-form {
+                        overflow-x: hidden;
+                        overflow-y: scroll;
+                        height: 100vh;
+                        top: 0;
+                        bottom: 0;
+                    }
+
+                </style>
+                <div class="for-you" class="animate" id="_5">
+                    <div class="for-you-form" id="for_you-screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!-- MAIN SCRIPT -->
+                <script>
+                    const _1 = document.getElementById('_1')
+                    const _5 = document.getElementById('_5')
+                    const _6 = document.getElementById('_6')
+                    const arr_list = [_1, _5, _6]
+                    let p_old = arr_list[0]
+                    let boll
+                    const render = (p)=>{
+                        boll = true
+                        arr_list.forEach(( document_page )=>{
+                            if ( p == '_5') {
+                                boll ? window.alert('مزال') :null
+                                boll = false
+                                return
+                            }else{
+                                if (document_page.id == p) {
+                                    document_page.style.display = 'block'
+                                }else{
+                                    document_page.style.display = 'none'
+                                }
+                            }
+
+                        })
+                        p_old = p
+                    }
+                    render('_1')
+                </script>
+            </div>
+            <div class="basic-tabs">
+                <img style="width: 25px;height: 25px;margin: auto;" onclick="render('_1')" src="/images/me-profile.png" alt="">
+                <img style="width: 25px;height: 25px;margin: auto;" onclick="render('_6')" src="/images/chats.png" alt="">
+                <img style="width: 25px;height: 25px;margin: auto;" onclick="render('_5')" src="/images/videos.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="/script/public-app.class.js"></script>
+    <script src="/script/public-main.js"></script>
+</body>
+</html>
+
+
+
+                    <!-- <script>
+                        const fileInput = document.getElementById('fileInput');
+                        const fileInfo = document.getElementById('fileInfo');
+                        const video = document.getElementById('video');
+                        const chunkSize = 1024 * 1024; // 1MB لكل جزء
+                        const arraybuffer_to_string = (arrayBuffer)=>{
+                            const decoder = new TextDecoder('utf-8');
+                            return decoder.decode(arrayBuffer);
+                            // return String.fromCharCode(... new Uint8Array(arrayBuffer))
+                        }
+                        fileInput.addEventListener('change', (event) => {
+                            const files = event.target.files;
+                            if (files.length > 0) {
+                                console.log(1)
+                                const file = files[0];
+                                const reader = new FileReader()
+                                reader.onload = async(e)=>{
+                                    let binary = e.target.result
+                                    let blob = new Blob([binary], {type:'video/mp4'})
+                                    const blobtobase64 = (blobe)=>{
+                                        const reader = new FileReader()
+                                        return new Promise((resolve, reject)=>{
+                                            reader.onloadend = ()=>{
+                                                resolve(reader.result)
+                                            }
+                                            reader.readAsDataURL(blobe)
+                                        })
+                                    }
+                                    console.log(blob)
+                                    await blobtobase64(blob).then((blobd)=>{
+                                        console.log(blobd)
+                                        video.src = 'data:video/mp4;base64' + blobd
+                                    })
+                                    console.log('loaded')
+                                }
+                                reader.readAsArrayBuffer(file)
+                            } else {
+                                fileInfo.innerHTML = "<p>لم يتم تحميل أي ملف.</p>";
+                            }
+                        });
+                    </script> -->
+
+                <!-- </div>
+                <img id="iii" alt="">
+                <script>
+                    const fileInput = document.getElementById('fileInput');
+                    const fileInfo = document.getElementById('fileInfo');
+                    const iii = document.getElementById('iii')
+
+                    fileInput.addEventListener('change', (event) => {
+                        const files = event.target.files;
+                        if (files.length > 0) {
+                            const file = files[0];
+                            const reader = new FileReader();
+                            const arraybuffer_to_string = (arrayBuffer)=>{
+                                return String.fromCharCode(...new Uint8Array(arrayBuffer))
+                            }
+                            reader.onload = (e) => {
+                                const binaryData = e.target.result;
+                                console.log(arraybuffer_to_string(binaryData))
+                                const base64_string = window.btoa(arraybuffer_to_string(binaryData))
+                                iii.src = 'data:image/png;base64,'+ base64_string
+                                fileInfo.innerHTML = `
+                                    <p>اسم الملف: ${file.name}</p>
+                                    <p>حجم الملف: ${file.size} بايت</p>
+                                    <p>نوع الملف: ${file.type}</p>
+                                    <p>Base64:</p>
+                                    <textarea style="width: 100%; height: 100px;">${base64_string}</textarea>
+                                `;
+                            };
+
+                            reader.onerror = (e) => {
+                                fileInfo.innerHTML = "<p>حدث خطأ أثناء قراءة الملف.</p>";
+                            };
+
+                            reader.readAsArrayBuffer(file); // قراءة الملف كبيانات ثنائية
+                        } else {
+                            fileInfo.innerHTML = "<p>لم يتم تحميل أي ملف.</p>";
+                        }
+                    });
+
+                </script> -->

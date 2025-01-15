@@ -1,0 +1,97 @@
+.avatar {
+    width: 110px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px aliceblue solid;
+    border-radius: 50%;
+    transform: translate( 10px , 50px);
+    /* overflow: hidden; */
+}
+.image-profile {
+    padding: 10px 0 0 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('/images/bg.png');
+    background-size: 100% 100%;
+    height: 160px;
+    width: 100%;
+}
+.image-profile-info {
+    height: 25px;
+    justify-content: right;
+    margin-left: auto;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 0 0 10px;
+    transform: translate( 0 , 45px);
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: rgba(240, 248, 255, 0.651);
+}
+.image-profile-opacity {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translate(-20px , -30px);
+    transition: 1000ms;
+}
+.edite-avatar-image {
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px aliceblue solid;
+    transform: translate(15px, -25px);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.more-info {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 0 20px 0;
+    text-align: center;
+    border-bottom: 1px aliceblue solid;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    direction: ltr;
+    color: aliceblue;
+}
+.tabs {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+img:hover {
+    cursor: pointer;
+}
+.change-background-images {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 5px;
+}
+.basic-tabs {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top: 1px aliceblue solid;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+}
+.content {
+    position: fixed;
+    width: 100%;
+    top: 274px;
+    bottom: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+}
